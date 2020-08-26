@@ -69,9 +69,6 @@
 ---
 ## vagrant 스크립트 가져오기
 ```script
-## Windows의 경우 : win키+r --> cmd (엔터)
-## 리눅스/맥OS의 경우 : 터미널
-
 git clone https://github.com/t2sc0m/VWS_vagrant_script.git 
 ```
 
