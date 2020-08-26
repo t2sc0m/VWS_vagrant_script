@@ -51,8 +51,12 @@
    - URL : https://www.virtualbox.org/
  - vagrant 설치
    - URL : https://www.vagrantup.com/
+ - git 설치
+   - URL : https://git-scm.com/downloads
  - vagrant 스크립트 가져오기
 ```script
+## Windows의 경우 : win키+r --> cmd (엔터)
+## 리눅스/맥OS의 경우 : 터미널
 git clone https://github.com/t2sc0m/VWS_vagrant_script.git 
 ```
 
@@ -64,7 +68,7 @@ vagrant up
 ```
 
 ---
-## 실행/정지/삭제 방법
+## 실행/정지/삭제/상태확인 방법
 ```script
 cd VWS_vagrant_script
 
@@ -79,6 +83,9 @@ vagrant halt (cent[1-3])
 
 # 삭제
 vagrant destroy (cent[1-3])
+
+# 상태확인
+vagrant status (cent[1-3])
 ```
 
 ---
