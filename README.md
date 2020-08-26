@@ -59,10 +59,14 @@
 
  - windows의 경우 주의점
    - 재시작 필요
+   - CMOS에서 CPU 가상화 설정을 모두 enabled로 설정
+     - Virtualization Techenology
+     - VT-d 
    - 각 프로그램의 설치는 기본 옵션으로 설치
    - 서버 구축할 때 백신 감시를 off로 변경
      - vagrant에서 centos8 이미지를 가져올 때 에러발생 사례가 있음
-   - 탐색기의 원하는 작업 폴더를 마우스 우클릭 --> Git Bash Here 클릭 후 다음 작업을 진행
+   - 탐색기에서 사용자 폴더 아래에 원하는 작업 폴더를 마우스 우클릭 
+     --> Git Bash Here 클릭 후 다음 작업을 진행
 
 ---
 ## vagrant 스크립트 가져오기
