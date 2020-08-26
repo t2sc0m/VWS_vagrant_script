@@ -114,6 +114,10 @@ sudo ps -ef | grep (nginx|mysql|nfs)
 ```
 
 ---
+## 웹 페이지 접속
+ - URL : http://172.18.1.91/www/index.html
+
+---
 ## 주의점
   - 이 스크립트에서 구현이 되지 않은 부분
     - Local IP사이의 통신 설정
