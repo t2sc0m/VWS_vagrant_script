@@ -53,10 +53,12 @@
    - URL : https://www.vagrantup.com/
  - git 설치
    - URL : https://git-scm.com/downloads
+ - windows의 경우 주의점
+   - 재시작 필요
+   - 설치는 기본 옵션으로 설치
 
-  ※ windows의 경우 재시작 필요
-
- - vagrant 스크립트 가져오기
+---
+## vagrant 스크립트 가져오기
 ```script
 ## Windows의 경우 : win키+r --> cmd (엔터)
 ## 리눅스/맥OS의 경우 : 터미널
