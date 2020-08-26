@@ -46,12 +46,21 @@
  - CONF : 필요한 설정 파일
 
 ---
-## 실행전 필요한 환경 
+## 실행전 필요한 환경 준비
  - virtualbox 설치
- - vagrant 설치 
+   - URL : https://www.virtualbox.org/
+ - vagrant 설치
+   - URL : https://www.vagrantup.com/
  - vagrant 스크립트 가져오기
 ```script
 git clone https://github.com/t2sc0m/VWS_vagrant_script.git 
+```
+
+---
+## 서버 구축
+```script
+cd VWS_vagrant_script
+vagrant up
 ```
 
 ---
@@ -61,6 +70,7 @@ cd VWS_vagrant_script
 
 ## 괄호 안의 cent[1-3]은 각각 가상서버를 의미하며 생략 가능
 ## 생략하면 모든 서버를 실행/정지/삭제 
+
 # 실행
 vagrant up (cent[1-3])
 
