@@ -53,11 +53,16 @@
    - URL : https://www.vagrantup.com/
  - git 설치
    - URL : https://git-scm.com/downloads
+
+ - linux / macos 의 경우 주의점
+   - 터미널에서 원하는 작업 디렉토리에 cd 커맨드로 이동 후 다음 작업을 진행
+
  - windows의 경우 주의점
    - 재시작 필요
-   - 설치는 기본 옵션으로 설치
+   - 각 프로그램의 설치는 기본 옵션으로 설치
    - 서버 구축할 때 백신 감시를 off로 변경
      - vagrant에서 centos8 이미지를 가져올 때 에러발생 사례가 있음
+   - 탐색기의 원하는 작업 폴더를 마우스 우클릭 --> Git Bash Here 클릭 후 다음 작업을 진행
 
 ---
 ## vagrant 스크립트 가져오기
