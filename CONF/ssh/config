@@ -1,0 +1,23 @@
+Host cent1
+HostKeyAlgorithms +ssh-dss
+HostName 172.18.1.91
+User root
+IdentityFile /root/.ssh/id_rsa
+Port 22
+ServerAliveInterval 30
+
+Host cent2
+HostKeyAlgorithms +ssh-dss
+HostName 172.18.1.92
+User root
+IdentityFile /root/.ssh/id_rsa
+Port 22
+ServerAliveInterval 30
+
+Host cent3
+HostKeyAlgorithms +ssh-dss
+HostName 172.18.1.93
+User root
+IdentityFile /root/.ssh/id_rsa
+Port 22
+ServerAliveInterval 30
