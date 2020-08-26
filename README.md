@@ -1,7 +1,5 @@
 # Bash Shell Script 실습용 vagrant 스크립트
 ---
-![tescom](https://en.gravatar.com/userimage/96759029/aa4308f795041de37cc2fedf0d1071ca?size=128)
-
 
 # Virtual Web Service사의 가상 서버 구축용 스크립트
 ---
