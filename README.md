@@ -1,7 +1,7 @@
-# Bash Shell Script 실습용 vagrant 스크립트
+# Bash Shell Script 실습용
 ---
 
-## Virtual Web Service사의 가상 서버 구축용 스크립트
+## Virtual Web Service사의 가상 서버 구축 vagrant 스크립트
 ---
 
 ## 서버 정보
