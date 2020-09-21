@@ -52,7 +52,7 @@ gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 EOF
       sudo dnf -y install dnf-utils
-      sudo dnf -y install nano vim git net-tools tar binutils 
+      sudo dnf -y install nano vim git net-tools tar binutils psmisc
       sudo dnf -y install boost-program-options
       sudo dnf -y install MariaDB-server MariaDB-client --disablerepo=AppStream
     SHELL
