@@ -21,7 +21,8 @@ Vagrant.configure("2") do |config|
     cent1.vm.provision "shell", inline: <<-SHELL
       sudo mv /tmp/vagrant /vagrant
       sudo dnf -y install dnf-utils
-      sudo dnf -y install vim git net-tools tar nginx
+      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat epel-release
+      sudo dnf -y install stress
     SHELL
     cent1.vm.provision "shell", path: "SHELL/init.sh"
   end
@@ -51,9 +52,10 @@ baseurl = http://yum.mariadb.org/10.4/centos8-amd64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 EOF
+
       sudo dnf -y install dnf-utils
-      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget
-      sudo dnf -y install boost-program-options
+      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat epel-release
+      sudo dnf -y install boost-program-options stress
       sudo dnf -y install MariaDB-server MariaDB-client --disablerepo=AppStream
     SHELL
     cent2.vm.provision "shell", path: "SHELL/init.sh"
@@ -77,7 +79,8 @@ EOF
       mv /tmp/vagrant /vagrant
       sudo mkdir /nfs              
       sudo dnf -y install dnf-utils
-      sudo dnf -y install vim git net-tools tar nfs-utils
+      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat epel-release
+      sudo dnf -y install stress
     SHELL
     cent3.vm.provision "shell", path: "SHELL/init.sh"
   end
