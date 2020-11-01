@@ -8,8 +8,8 @@
   - cent1 (웹)
   ```script
     OS : CentOS8 
-    CPU : 1 Core
-    MEM : 2G
+    CPU : 2 Core
+    MEM : 1G
     Disk : 20G
     Middleware : nginx
     DMZ : 172.18.1.91
@@ -18,8 +18,8 @@
   - cent2 (데이터베이스)
   ```script
     OS : CentOS8 
-    CPU : 1 Core
-    MEM : 2G
+    CPU : 2 Core
+    MEM : 1G
     Disk : 20G
     Middleware : mariadb
     DMZ : 172.18.1.92
@@ -28,8 +28,8 @@
   - cent3 (스토리지)
   ```script
     OS : CentOS8 
-    CPU : 1 Core
-    MEM : 2G
+    CPU : 2 Core
+    MEM : 1G
     Disk : 20G
     Middleware : nfs
     DMZ : 172.18.1.93

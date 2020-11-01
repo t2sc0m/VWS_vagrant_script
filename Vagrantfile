@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     cent1.vm.network "private_network", ip: "10.18.1.91"
     cent1.vm.provider "virtualbox" do |v|
       v.name = "cent1"
-      v.memory = 512
+      v.memory = 1024
       v.cpus = 2
       v.linked_clone = true
       v.gui = false
@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
     cent2.vm.network "private_network", ip: "10.18.1.91"
     cent2.vm.provider "virtualbox" do |v|
       v.name = "cent2"
-      v.memory = 512
+      v.memory = 1024
       v.cpus = 2
       v.linked_clone = true
       v.gui = false
@@ -68,7 +68,7 @@ EOF
     cent3.vm.network "private_network", ip: "10.18.1.93"
     cent3.vm.provider "virtualbox" do |v|
       v.name = "cent3"
-      v.memory = 512
+      v.memory = 1024
       v.cpus = 2
       v.linked_clone = true
       v.gui = false
