@@ -56,7 +56,7 @@
    - 터미널에서 원하는 작업 디렉토리에 cd 커맨드로 이동 후 다음 작업을 진행
 
  - windows의 경우 주의점
-   - 재시작 필요
+   - CMOS 설정을 할 경우 재시작 필요
    - CMOS에서 CPU 가상화 설정을 모두 enabled로 설정
      - Virtualization Techenology
      - VT-d 
