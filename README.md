@@ -111,6 +111,8 @@ sudo ps -ef | grep (nginx|mysql|nfs)
 ---
 ## 웹 페이지 접속
  - URL : http://172.18.1.91/www/index.html
+ - hosts를 수정한 경우 지정한 도메인으로 접속 가능
+   - 웹서버 가상호스트 설정 : vws.tmpcompany.com
 
 ---
 ## 주의점
