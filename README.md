@@ -69,7 +69,7 @@
 ---
 ## vagrant 스크립트 가져오기
 ```script
-git clone https://github.com/t2sc0m/VWS_vagrant_script.git 
+git clone https://github.com/bashbomb/VWS_vagrant_script.git 
 ```
 
 ---
