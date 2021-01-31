@@ -21,8 +21,8 @@ Vagrant.configure("2") do |config|
     cent1.vm.provision "shell", inline: <<-SHELL
       sudo mv /tmp/vagrant /vagrant
       sudo dnf -y install dnf-utils
-      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat dailog epel-release
-      sudo dnf -y install stress
+      sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat dialog epel-release
+      sudo dnf -y install stress nginx
     SHELL
     cent1.vm.provision "shell", path: "SHELL/init.sh"
   end
@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "cent2" do |cent2|
     cent2.vm.hostname = "cent2"
     cent2.vm.network "private_network", ip: "172.18.1.92"
-    cent2.vm.network "private_network", ip: "10.18.1.91"
+    cent2.vm.network "private_network", ip: "10.18.1.92"
     cent2.vm.provider "virtualbox" do |v|
       v.name = "cent2"
       v.memory = 1024
@@ -56,7 +56,7 @@ EOF
       sudo dnf -y install dnf-utils
       sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat dialog epel-release
       sudo dnf -y install boost-program-options stress
-      sudo dnf -y install MariaDB-server MariaDB-client MariaDB-backup --disablerepo=AppStream
+      sudo dnf -y install mariadb-server mariadb-client mariadb-backup --disablerepo=AppStream
     SHELL
     cent2.vm.provision "shell", path: "SHELL/init.sh"
   end
