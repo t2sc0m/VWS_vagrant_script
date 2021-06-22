@@ -56,7 +56,9 @@ EOF
       sudo dnf -y install dnf-utils
       sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat dialog epel-release
       sudo dnf -y install boost-program-options stress
-      sudo dnf -y install mariadb-server mariadb-client mariadb-backup --disablerepo=AppStream
+      sudo dnf -y install mariadb-server --disablerepo=AppStream
+      sudo dnf -y install mariadb-client --disablerepo=AppStream
+      sudo dnf -y install mariadb-backup --disablerepo=AppStream      
     SHELL
     cent2.vm.provision "shell", path: "SHELL/init.sh"
   end
