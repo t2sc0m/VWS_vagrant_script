@@ -22,7 +22,8 @@ Vagrant.configure("2") do |config|
       sudo mv /tmp/vagrant /vagrant
       sudo dnf -y install dnf-utils
       sudo dnf -y install nano vim git net-tools tar binutils psmisc wget sysstat dialog epel-release
-      sudo dnf -y install stress nginx
+      sudo dnf -y install stress 
+      sudo dnf -y install nginx
     SHELL
     cent1.vm.provision "shell", path: "SHELL/init.sh"
   end
