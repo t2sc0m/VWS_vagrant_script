@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
   # All server set
-  config.vm.box = "centos/8"
+  config.vm.box = "rockylinux/8"
   config.vm.box_check_update = true
 
   # Create cent1
