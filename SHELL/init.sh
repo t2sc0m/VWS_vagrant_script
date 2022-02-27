@@ -29,7 +29,7 @@ echo "root유저의 환경설정을 합니다."
 echo "ssh 설정을 등록합니다."
 sudo cp -rfp ${SSH} /root/.ssh
 sudo chown root:root /root/.ssh -R
-sudo chmod 755 /root/.ssh -R
+sudo chmod 644 /root/.ssh -R
 sudo chmod 600 /root/.ssh/id_rsa
 sudo chmod 644 /root/.ssh/authorized_keys
 
